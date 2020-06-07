@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>j01</title>
+
+<style type="text/css">
+	li{
+		cursor: pointer;
+		/* li글들에 마우스포인트 올리면 손모양나옴*/
+	}
+</style>
+	<!-- 내부는 택스트방식 자바스크립트 형식 -->
+	<script type="text/javascript">
+	/* function 펑션명(){
+		명령들
+	}*/
+		function embededTest(){
+			var doc = document.getElementsByTagName("li")[1];
+			doc.style.color="red";
+			doc.innerHTML="<strong>글자가 바뀌었습니다!!</strong>";
+		}
+	</script>
+	
+	<script type="text/javascript" src="resources/js/basic.js"></script>
+	<!-- basic.js 파일을 가져와서 쓸꺼야 근데 이렇게 외부로 가져올때는
+			절대 script사이에 뭐 적으면안댐 절대로 절대로 절대로!!!!!!!!!!!!!  -->
+</head>
+<body>
+
+	<h1>자바스크립트 작성 방식 3가지</h1>
+	
+	<ol>
+		<li onclick="alert('inline 방식으로 실행됨!')">inline 방식</li>
+		<!-- on 붙으면 js겠구나라고 생각하자 이벤트가 발생하겠구나 -->
+		<!-- onclik안에 자바스크립트 명렁어 넣어두면 그 명령 실행됨 -->
+		<!-- 세미콜론 안써도됨 써도되고 요즘 나오는 언어들 거의 안씀 -->
+		
+		<li onclick="embededTest()">내부 작성방식</li>
+		<!-- function에 있는 embededTest 호출함 -->
+		
+		<li onclick="test()">외부 작성방식 (*.js)</li>
+		
+		<!-- alert은 경고창띄우기!!!! -->
+	</ol>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
