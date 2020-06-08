@@ -13,7 +13,7 @@ function alertTest(){
 ```
 
 ```html
-<script type="text/javascript" src="resources/js/func01"></script>
+<script type="text/javascript" src="resources/js/func01.js"></script>
 <p>
     alert() <button onclick="alertTest();">클릭</button>
 </p>
