@@ -54,6 +54,8 @@ function test02(){
 ```
 
 ```html
+<link type="text/javascript" src="resources/js/type.js"
+
 <button onclick="test02();">확인</button>
 <dd id="v02"></dd>
 ```
