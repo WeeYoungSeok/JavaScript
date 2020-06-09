@@ -141,3 +141,28 @@ function pmEdu(val){
 
 
 ***앞에 JavaScript_3에서도 이야기했듯이 자바스크립트에서는 변수가 함수값을 받을 수 있고 그 함수를 실행하기 위해서는 꼭 괄호가 필요하며 파라미터가 존재하는 함수이면 괄호안에 파라미터를 꼭 넣어 주어야한다. 자바의 메소드와 비슷하면서도 은근 다르다 꼭 조심하고 복습 많이하자***
+
+
+
+- args(arguments)
+
+```html
+<script type="text/javascript">
+	function valTest(){
+        var val="";
+        for(var i = 0; i < argumets.length; i++){
+            val += arguments[i]+" ";
+        }
+    }
+</script>
+
+<h2 onclick="valTest('kh', '정보', '교육원', 'Qclass');">args(arguments)</h2>
+```
+
+> arguments는 argument의 객체이다.
+>
+> 우리가 아규먼트로 값을 넣어서 파라미터 없이 함수를 불러와 arguments를 사용해주면 자바처럼 배열형태로 만들어진다. 그걸 for문을 통해 하나씩 뽑아 올 수 있다.
+>
+> 그리고 아규먼트의 갯수 제한은 무한대이다.
+>
+> valTest의 파라미터 개수를 3개로하고 함수를 실행해봐도 사용자가 넣은 아규먼트 갯수대로 출력이 된다.
